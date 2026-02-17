@@ -1,0 +1,252 @@
+<html class="dark" lang="pt-BR"><head><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="dark min-h-screen pb-32">```html
+
+
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Agenda Semanal - Meu Treinador</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --neon-green-start: #10b981;
+            --neon-green-end: #ccff00;
+            --orange-start: #f97316;
+            --orange-end: #ef4444;
+            --purple-start: #8b5cf6;
+            --purple-end: #d946ef;
+            --blue-start: #3b82f6;
+            --blue-end: #06b6d4;
+            --neon-yellow-start: #facc15;
+            --neon-yellow-end: #ccff00;
+            --background-dark: #0D0D0D;
+            --card-dark: #1A1A1A;
+            --inactive-gray: #64748b;
+        }
+        @layer base {
+            body {
+                font-family: 'Inter', sans-serif;
+                -webkit-tap-highlight-color: transparent;
+                background-color: var(--background-dark);
+                color: #ffffff;
+                margin: 0;
+                padding: 0;
+            }
+        }
+        .gradient-neon-green {
+            background: linear-gradient(135deg, var(--neon-green-start) 0%, var(--neon-green-end) 100%);
+        }
+        .gradient-orange-red {
+            background: linear-gradient(135deg, var(--orange-start) 0%, var(--orange-end) 100%);
+        }
+        .gradient-neon-yellow {
+            background: linear-gradient(135deg, var(--neon-yellow-start) 0%, var(--neon-yellow-end) 100%);
+        }
+        .gradient-text-neon {
+            background: linear-gradient(135deg, var(--neon-green-start) 0%, var(--neon-green-end) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .neon-glow-green {
+            box-shadow: 0 0 20px rgba(16, 185, 129, 0.2);
+        }
+        .central-button-glow {
+            box-shadow: 0 0 35px rgba(204, 255, 0, 0.45);
+        }
+        .glass-nav {
+            backdrop-filter: blur(25px);
+            background: rgba(13, 13, 13, 0.96);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .fill-1 {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#ccff00",
+                        "emerald-vibrant": "#10b981",
+                        "background-dark": "#0D0D0D",
+                        "card-dark": "#1A1A1A",
+                        "inactive": "#64748b",
+                    },
+                },
+            },
+        };
+    </script>
+
+
+<header class="px-6 pt-10 pb-4 sticky top-0 bg-background-dark/95 backdrop-blur-xl z-30">
+<div class="flex justify-between items-center mb-6">
+<div>
+<h1 class="text-2xl font-black tracking-tight text-white uppercase leading-none">
+                    MEU <span class="gradient-text-neon">TREINADOR</span>
+</h1>
+<p class="text-[10px] font-bold text-slate-500 uppercase tracking-[0.2em] mt-1">Segunda-feira, 22 de Outubro</p>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-right">
+<p class="text-[9px] font-black text-slate-500 uppercase tracking-widest">Nível</p>
+<p class="text-xl font-black leading-none gradient-text-neon">2<span class="text-xs text-slate-600 font-normal">/90</span></p>
+</div>
+<div class="h-11 w-11 rounded-xl bg-emerald-500/10 flex items-center justify-center border border-emerald-500/20 neon-glow-green">
+<span class="material-symbols-outlined gradient-text-neon text-2xl fill-1">bolt</span>
+</div>
+</div>
+</div>
+<div class="flex bg-card-dark p-1 rounded-2xl border border-white/5">
+<button class="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl gradient-neon-green text-black font-black shadow-lg shadow-emerald-500/10 transition-all">
+<span class="material-symbols-outlined text-lg fill-1">fitness_center</span>
+<span class="text-[10px] uppercase tracking-wider">Treino</span>
+</button>
+<button class="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl text-slate-500 font-bold">
+<span class="material-symbols-outlined text-lg">restaurant</span>
+<span class="text-[10px] uppercase tracking-wider">Dieta</span>
+</button>
+<button class="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl text-slate-500 font-bold">
+<span class="material-symbols-outlined text-lg">query_stats</span>
+<span class="text-[10px] uppercase tracking-wider">Stats</span>
+</button>
+</div>
+</header>
+<main class="space-y-8">
+<section class="px-6">
+<div class="flex overflow-x-auto gap-3 no-scrollbar pb-2">
+<div class="flex-shrink-0 w-[52px] h-20 rounded-2xl bg-card-dark border border-white/5 flex flex-col items-center justify-center gap-1">
+<span class="text-[10px] font-bold text-slate-500 uppercase">Dom</span>
+<span class="text-sm font-black">21</span>
+<div class="flex gap-0.5 mt-1">
+<div class="w-1 h-1 rounded-full bg-red-500"></div>
+</div>
+</div>
+<div class="flex-shrink-0 w-[52px] h-20 rounded-2xl bg-card-dark border-2 border-primary flex flex-col items-center justify-center gap-1 shadow-[0_0_15px_rgba(204,255,0,0.15)]">
+<span class="text-[10px] font-bold text-primary uppercase">Seg</span>
+<span class="text-sm font-black text-white">22</span>
+<div class="flex gap-1 mt-1">
+<div class="w-1 h-1 rounded-full bg-emerald-500"></div>
+<div class="w-1 h-1 rounded-full bg-yellow-400"></div>
+<div class="w-1 h-1 rounded-full bg-orange-500"></div>
+</div>
+</div>
+<div class="flex-shrink-0 w-[52px] h-20 rounded-2xl bg-card-dark border border-white/5 flex flex-col items-center justify-center gap-1">
+<span class="text-[10px] font-bold text-slate-500 uppercase">Ter</span>
+<span class="text-sm font-black">23</span>
+<div class="flex gap-0.5 mt-1">
+<div class="w-1 h-1 rounded-full bg-emerald-500"></div>
+</div>
+</div>
+<div class="flex-shrink-0 w-[52px] h-20 rounded-2xl bg-card-dark border border-white/5 flex flex-col items-center justify-center gap-1">
+<span class="text-[10px] font-bold text-slate-500 uppercase">Qua</span>
+<span class="text-sm font-black">24</span>
+<div class="flex gap-0.5 mt-1">
+<div class="w-1 h-1 rounded-full bg-yellow-400"></div>
+</div>
+</div>
+<div class="flex-shrink-0 w-[52px] h-20 rounded-2xl bg-card-dark border border-white/5 flex flex-col items-center justify-center gap-1">
+<span class="text-[10px] font-bold text-slate-500 uppercase">Qui</span>
+<span class="text-sm font-black">25</span>
+<div class="flex gap-0.5 mt-1">
+<div class="w-1 h-1 rounded-full bg-emerald-500"></div>
+</div>
+</div>
+<div class="flex-shrink-0 w-[52px] h-20 rounded-2xl bg-card-dark border border-white/5 flex flex-col items-center justify-center gap-1">
+<span class="text-[10px] font-bold text-slate-500 uppercase">Sex</span>
+<span class="text-sm font-black">26</span>
+<div class="flex gap-0.5 mt-1">
+<div class="w-1 h-1 rounded-full bg-emerald-500"></div>
+<div class="w-1 h-1 rounded-full bg-orange-500"></div>
+</div>
+</div>
+<div class="flex-shrink-0 w-[52px] h-20 rounded-2xl bg-card-dark border border-white/5 flex flex-col items-center justify-center gap-1">
+<span class="text-[10px] font-bold text-slate-500 uppercase">Sáb</span>
+<span class="text-sm font-black">27</span>
+<div class="flex gap-0.5 mt-1">
+<div class="w-1 h-1 rounded-full bg-yellow-400"></div>
+</div>
+</div>
+</div>
+</section>
+<section class="px-6 space-y-4">
+<h3 class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-500 ml-1">Agenda de Hoje</h3>
+<div class="gradient-neon-green p-[1px] rounded-[2rem]">
+<div class="bg-card-dark/90 rounded-[1.95rem] p-5 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="h-14 w-14 rounded-2xl bg-emerald-500/10 flex items-center justify-center border border-emerald-500/20">
+<span class="material-symbols-outlined text-emerald-400 text-3xl fill-1">fitness_center</span>
+</div>
+<div>
+<p class="text-[11px] font-black uppercase tracking-widest text-emerald-400">07:00 - MUSCULAÇÃO</p>
+<p class="text-lg font-black text-white uppercase mt-0.5">Peito / Tríceps</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-slate-600">chevron_right</span>
+</div>
+</div>
+<div class="gradient-neon-yellow p-[1px] rounded-[2rem]">
+<div class="bg-card-dark/90 rounded-[1.95rem] p-5 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="h-14 w-14 rounded-2xl bg-yellow-400/10 flex items-center justify-center border border-yellow-400/20">
+<span class="material-symbols-outlined text-yellow-400 text-3xl fill-1">directions_run</span>
+</div>
+<div>
+<p class="text-[11px] font-black uppercase tracking-widest text-yellow-400">18:00 - CORRIDA</p>
+<p class="text-lg font-black text-white uppercase mt-0.5">8KM - Regenerativo</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-slate-600">chevron_right</span>
+</div>
+</div>
+<div class="gradient-orange-red p-[1px] rounded-[2rem]">
+<div class="bg-card-dark/90 rounded-[1.95rem] p-5 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="h-14 w-14 rounded-2xl bg-orange-500/10 flex items-center justify-center border border-orange-500/20">
+<span class="material-symbols-outlined text-orange-400 text-3xl fill-1">self_improvement</span>
+</div>
+<div>
+<p class="text-[11px] font-black uppercase tracking-widest text-orange-400">20:00 - MOBILIDADE</p>
+<p class="text-lg font-black text-white uppercase mt-0.5">Full Body Flex</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-slate-600">chevron_right</span>
+</div>
+</div>
+</section>
+</main>
+<nav class="fixed bottom-0 left-0 right-0 glass-nav border-t border-white/5 px-6 pt-3 pb-8 flex justify-between items-center z-50">
+<a class="flex flex-col items-center gap-1 text-inactive hover:text-slate-300 w-14 transition-colors" href="#">
+<span class="material-symbols-outlined text-[26px]">home</span>
+<span class="text-[9px] font-black uppercase tracking-wider">Início</span>
+</a>
+<a class="flex flex-col items-center gap-1 w-14 transition-colors" href="#">
+<span class="material-symbols-outlined fill-1 text-[26px] gradient-text-neon">calendar_today</span>
+<span class="text-[9px] font-black uppercase tracking-wider gradient-text-neon">Agenda</span>
+</a>
+<div class="relative -mt-6">
+<div class="p-[2px] rounded-full bg-background-dark border-[4px] border-background-dark central-button-glow">
+<button class="h-14 w-14 rounded-full gradient-neon-green flex items-center justify-center text-black active:scale-90 transition-transform shadow-[0_0_20px_rgba(204,255,0,0.4)]">
+<span class="material-symbols-outlined text-3xl fill-1">bolt</span>
+</button>
+</div>
+</div>
+<a class="flex flex-col items-center gap-1 text-inactive hover:text-slate-300 w-14 transition-colors" href="#">
+<span class="material-symbols-outlined text-[26px]">military_tech</span>
+<span class="text-[9px] font-black uppercase tracking-wider">Challenge</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-inactive hover:text-slate-300 w-14 transition-colors" href="#">
+<span class="material-symbols-outlined text-[26px]">person</span>
+<span class="text-[9px] font-black uppercase tracking-wider">Perfil</span>
+</a>
+</nav>
+
+```</body></html>

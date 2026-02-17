@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Meu Treinador - V3</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#10B981", 
+                        neon: "#ADFF2F",    
+                        darkest: "#050505",
+                        surface: "#0F0F0F",
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            body {
+                @apply bg-darkest text-white antialiased;
+                -webkit-tap-highlight-color: transparent;
+                font-family: 'Inter', sans-serif;
+            }
+        }
+        .bg-gradient-neon {
+            background: linear-gradient(135deg, #10B981 0%, #ADFF2F 100%);
+        }
+        .text-gradient-neon {
+            background: linear-gradient(135deg, #10B981 0%, #ADFF2F 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .mesh-bg {
+            background-image: 
+                radial-gradient(circle at 50% -10%, rgba(16, 185, 129, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 0% 100%, rgba(173, 255, 47, 0.05) 0%, transparent 40%);
+        }
+        * {
+            font-style: normal !important;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-[100dvh] flex flex-col items-center justify-between overflow-hidden mesh-bg">
+<div class="w-full h-12 shrink-0"></div>
+<main class="relative z-10 w-full max-w-md px-8 flex-1 flex flex-col items-center justify-center text-center">
+<div class="mb-10 relative">
+<div class="relative w-16 h-16 bg-gradient-neon rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-[0_0_30px_rgba(173,255,47,0.3)]">
+<span class="material-symbols-outlined text-black text-3xl font-black">bolt</span>
+</div>
+<h1 class="text-xs font-black tracking-[0.3em] uppercase opacity-60">
+                MEU <span class="text-white opacity-100">TREINADOR</span>
+</h1>
+</div>
+<div class="space-y-6 mb-10">
+<h2 class="text-[2.75rem] font-extrabold leading-[1.05] tracking-tight">
+                Seu treinador pessoal que <span class="text-gradient-neon">nunca falta.</span>
+</h2>
+<p class="text-gray-400 text-base font-normal max-w-[300px] mx-auto leading-relaxed">
+                Treinos, dieta e evolução — tudo personalizado e com o acompanhamento que você precisa.
+            </p>
+</div>
+<div class="w-full glass-card p-6 rounded-[2.5rem] mb-4 border-white/10">
+<div class="flex justify-between items-center mb-5">
+<div class="flex items-center gap-3">
+<div class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-neon opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-neon"></span>
+</div>
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Motor IA Conectado</span>
+</div>
+<div class="bg-neon/10 px-2.5 py-1 rounded-lg">
+<span class="text-[9px] font-black text-neon uppercase tracking-[0.15em]">Sincronizando</span>
+</div>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between items-end">
+<span class="text-[10px] text-gray-500 font-bold uppercase">Meta Semanal</span>
+<span class="text-xl font-black text-white">85%</span>
+</div>
+<div class="h-2 w-full bg-white/5 rounded-full overflow-hidden">
+<div class="h-full bg-gradient-neon w-[85%] shadow-[0_0_20px_rgba(173,255,47,0.5)]"></div>
+</div>
+</div>
+</div>
+</main>
+<footer class="relative z-10 w-full max-w-md px-8 pb-12 space-y-4 shrink-0">
+<button class="w-full py-5 bg-gradient-neon text-black font-extrabold text-lg rounded-2xl transition-all active:scale-[0.98] shadow-[0_12px_30px_rgba(16,185,129,0.3)] flex items-center justify-center gap-2 tracking-tight">
+            INICIAR JORNADA
+            <span class="material-symbols-outlined font-black">arrow_forward</span>
+</button>
+<button class="w-full py-4 flex items-center justify-center gap-2 text-gray-400 font-bold hover:text-white transition-colors">
+            Já possui uma conta? 
+            <span class="text-white border-b border-neon/50">Entrar</span>
+</button>
+<div class="pt-6 text-center">
+<p class="text-[9px] text-gray-600 uppercase tracking-[0.4em] font-black">Evolution Driven by AI</p>
+</div>
+</footer>
+<div class="fixed bottom-2 w-32 h-1.5 bg-white/10 rounded-full z-30 left-1/2 -translate-x-1/2"></div>
+
+</body></html>

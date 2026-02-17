@@ -1,0 +1,265 @@
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stats do Atleta - Meu Treinador</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --neon-green-start: #10b981;
+            --neon-green-end: #ccff00;
+            --orange-start: #f97316;
+            --orange-end: #ef4444;
+            --purple-start: #8b5cf6;
+            --purple-end: #d946ef;
+            --blue-start: #3b82f6;
+            --blue-end: #06b6d4;
+            --background-dark: #0D0D0D;
+            --card-dark: #1A1A1A;
+            --card-stats: #1E1E1E;
+            --inactive-gray: #64748b;
+        }
+        @layer base {
+            body {
+                font-family: 'Inter', sans-serif;
+                -webkit-tap-highlight-color: transparent;
+                background-color: var(--background-dark);
+                color: #ffffff;
+                margin: 0;
+                padding: 0;
+            }
+        }
+        .gradient-neon-green {
+            background: linear-gradient(135deg, var(--neon-green-start) 0%, var(--neon-green-end) 100%);
+        }
+        .gradient-orange-red {
+            background: linear-gradient(135deg, var(--orange-start) 0%, var(--orange-end) 100%);
+        }
+        .gradient-purple-violet {
+            background: linear-gradient(135deg, var(--purple-start) 0%, var(--purple-end) 100%);
+        }
+        .gradient-blue-cyan {
+            background: linear-gradient(135deg, var(--blue-start) 0%, var(--blue-end) 100%);
+        }
+        .gradient-yellow-orange {
+            background: linear-gradient(135deg, #facc15 0%, #f97316 100%);
+        }
+        .gradient-text-neon {
+            background: linear-gradient(135deg, var(--neon-green-start) 0%, var(--neon-green-end) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .neon-glow-green {
+            box-shadow: 0 0 20px rgba(16, 185, 129, 0.2);
+        }
+        .purple-glow-border {
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            box-shadow: 0 0 15px rgba(139, 92, 246, 0.1);
+        }
+        .central-button-glow {
+            box-shadow: 0 0 35px rgba(204, 255, 0, 0.45);
+        }
+        .glass-nav {
+            backdrop-filter: blur(25px);
+            background: rgba(13, 13, 13, 0.96);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .fill-1 {
+            font-variation-settings: 'FILL' 1;
+        }
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#ccff00",
+                        "emerald-vibrant": "#10b981",
+                        "background-dark": "#0D0D0D",
+                        "card-dark": "#1A1A1A",
+                        "card-stats": "#1E1E1E",
+                        "inactive": "#64748b",
+                    },
+                    borderRadius: {
+                        '3xl': '1.5rem',
+                        '4xl': '2rem',
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="dark min-h-screen pb-32">
+<header class="px-6 pt-10 pb-4 sticky top-0 bg-background-dark/95 backdrop-blur-xl z-30">
+<div class="flex justify-between items-center mb-6">
+<div>
+<h1 class="text-2xl font-black tracking-tight text-white uppercase leading-none">
+                    MEU <span class="gradient-text-neon">TREINADOR</span>
+</h1>
+<p class="text-[10px] font-bold text-slate-500 uppercase tracking-[0.2em] mt-1">Segunda-feira, 22 de Outubro</p>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-right">
+<p class="text-[9px] font-black text-slate-500 uppercase tracking-widest">Nível</p>
+<p class="text-xl font-black leading-none gradient-text-neon">2<span class="text-xs text-slate-600 font-normal">/90</span></p>
+</div>
+<div class="h-11 w-11 rounded-xl bg-emerald-500/10 flex items-center justify-center border border-emerald-500/20 neon-glow-green">
+<span class="material-symbols-outlined gradient-text-neon text-2xl fill-1">bolt</span>
+</div>
+</div>
+</div>
+<div class="gradient-purple-violet p-[1px] rounded-3xl shadow-xl shadow-purple-500/10">
+<div class="bg-card-dark/40 backdrop-blur-sm rounded-[1.4rem] p-5 relative overflow-hidden">
+<div class="absolute -right-4 -top-4 w-32 h-32 bg-white/10 rounded-full blur-3xl"></div>
+<div class="flex justify-between items-center mb-4 relative z-10">
+<div>
+<span class="text-[9px] font-black uppercase tracking-[0.15em] text-white/60 mb-1 block">Elite Challenge</span>
+<h3 class="font-black text-lg text-white leading-tight">Rio Marathon 2024</h3>
+</div>
+<div class="bg-white/10 px-3 py-1 rounded-full border border-white/10">
+<span class="text-xs font-black text-white">12%</span>
+</div>
+</div>
+<div class="w-full bg-white/10 h-2 rounded-full overflow-hidden p-[1px] border border-white/5 relative z-10">
+<div class="bg-white h-full rounded-full" style="width: 12%"></div>
+</div>
+<div class="flex justify-between mt-2 relative z-10">
+<p class="text-[9px] font-bold text-white/60 uppercase">Progresso atual</p>
+<p class="text-[9px] font-bold text-white/60 uppercase">42.2km meta</p>
+</div>
+</div>
+</div>
+</header>
+<main class="px-6 space-y-8">
+<div class="flex bg-card-dark p-1 rounded-2xl border border-white/5">
+<button class="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl text-slate-500 font-bold hover:text-slate-300">
+<span class="material-symbols-outlined text-lg">fitness_center</span>
+<span class="text-[10px] uppercase tracking-wider">Treino</span>
+</button>
+<button class="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl text-slate-500 font-bold hover:text-slate-300">
+<span class="material-symbols-outlined text-lg">restaurant</span>
+<span class="text-[10px] uppercase tracking-wider">Dieta</span>
+</button>
+<button class="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl gradient-purple-violet text-white font-black shadow-lg shadow-purple-500/10 transition-all">
+<span class="material-symbols-outlined text-lg fill-1">query_stats</span>
+<span class="text-[10px] uppercase tracking-wider">Stats</span>
+</button>
+</div>
+<section class="space-y-4">
+<h3 class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-500 ml-1">Evolução e Recordes</h3>
+<div class="bg-card-stats rounded-3xl p-6 purple-glow-border relative overflow-hidden">
+<div class="flex justify-between items-center mb-6">
+<div>
+<p class="text-[9px] font-black uppercase tracking-widest text-slate-500">Peso Corporal</p>
+<h4 class="text-2xl font-black text-white">82.4 <span class="text-sm font-bold text-slate-400">kg</span></h4>
+</div>
+<div class="text-right">
+<p class="text-[9px] font-black uppercase tracking-widest text-emerald-400">-1.2kg</p>
+<p class="text-[9px] font-bold text-slate-500 uppercase tracking-widest">Este mês</p>
+</div>
+</div>
+<div class="h-32 w-full flex items-end gap-2 px-1">
+<div class="flex-1 bg-white/5 h-[60%] rounded-t-lg relative group">
+<div class="absolute -top-6 left-1/2 -translate-x-1/2 text-[8px] font-bold opacity-0 group-hover:opacity-100 transition-opacity">84.0</div>
+</div>
+<div class="flex-1 bg-white/5 h-[75%] rounded-t-lg relative group"></div>
+<div class="flex-1 bg-white/5 h-[65%] rounded-t-lg relative group"></div>
+<div class="flex-1 bg-white/10 h-[55%] rounded-t-lg relative group"></div>
+<div class="flex-1 bg-white/10 h-[50%] rounded-t-lg relative group"></div>
+<div class="flex-1 bg-purple-500/40 h-[45%] rounded-t-lg relative group border-t-2 border-purple-400">
+<div class="absolute -top-6 left-1/2 -translate-x-1/2 text-[8px] font-black text-purple-400">82.4</div>
+</div>
+</div>
+<div class="flex justify-between mt-3 px-1 text-[8px] font-black text-slate-600 uppercase tracking-widest">
+<span>Set</span>
+<span>Out</span>
+</div>
+</div>
+<div class="grid grid-cols-1 gap-4">
+<div class="relative overflow-hidden gradient-neon-green rounded-3xl p-5 text-black shadow-lg">
+<div class="flex justify-between items-start mb-4">
+<span class="bg-black/10 text-[9px] font-black uppercase tracking-widest px-2.5 py-1 rounded-full border border-black/5">Musculação PRs</span>
+<span class="material-symbols-outlined text-xl fill-1 opacity-40">fitness_center</span>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<p class="text-[9px] font-bold uppercase tracking-widest opacity-60">Supino</p>
+<p class="text-lg font-black tracking-tight">100 <span class="text-[10px]">KG</span></p>
+</div>
+<div>
+<p class="text-[9px] font-bold uppercase tracking-widest opacity-60">Agachamento</p>
+<p class="text-lg font-black tracking-tight">140 <span class="text-[10px]">KG</span></p>
+</div>
+</div>
+</div>
+<div class="relative overflow-hidden gradient-yellow-orange rounded-3xl p-5 text-black shadow-lg">
+<div class="flex justify-between items-start mb-4">
+<span class="bg-black/10 text-[9px] font-black uppercase tracking-widest px-2.5 py-1 rounded-full border border-black/5">Corrida PRs</span>
+<span class="material-symbols-outlined text-xl fill-1 opacity-40">speed</span>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<p class="text-[9px] font-bold uppercase tracking-widest opacity-60">Melhor 5km</p>
+<p class="text-lg font-black tracking-tight">21:30</p>
+</div>
+<div>
+<p class="text-[9px] font-bold uppercase tracking-widest opacity-60">Melhor 10km</p>
+<p class="text-lg font-black tracking-tight">44:00</p>
+</div>
+</div>
+</div>
+<div class="relative overflow-hidden gradient-purple-violet rounded-3xl p-6 text-white shadow-xl shadow-purple-500/20">
+<div class="absolute -right-6 -bottom-6 w-32 h-32 bg-white/10 rounded-full blur-3xl"></div>
+<div class="flex justify-between items-center relative z-10">
+<div>
+<p class="text-[9px] font-black uppercase tracking-[0.15em] text-white/60 mb-1">Status Geral</p>
+<h2 class="text-2xl font-black tracking-tight uppercase leading-tight">% de Aderência ao Plano</h2>
+</div>
+<div class="text-right">
+<h3 class="text-3xl font-black">94%</h3>
+<p class="text-[9px] font-bold text-white/60 uppercase tracking-widest">Este mês</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<nav class="fixed bottom-0 left-0 right-0 glass-nav border-t border-white/5 px-6 pt-3 pb-8 flex justify-between items-center z-50">
+<a class="flex flex-col items-center gap-1 w-14 transition-colors" href="#">
+<span class="material-symbols-outlined fill-1 text-[26px] gradient-text-neon">home</span>
+<span class="text-[9px] font-black uppercase tracking-wider font-poppins gradient-text-neon">Início</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-inactive hover:text-slate-300 w-14 transition-colors" href="#">
+<span class="material-symbols-outlined text-[26px]">calendar_today</span>
+<span class="text-[9px] font-black uppercase tracking-wider font-poppins">Agenda</span>
+</a>
+<div class="relative -mt-6">
+<div class="p-[2px] rounded-full bg-background-dark border-[4px] border-background-dark central-button-glow">
+<button class="h-14 w-14 rounded-full gradient-neon-green flex items-center justify-center text-black active:scale-90 transition-transform shadow-[0_0_20px_rgba(204,255,0,0.4)]">
+<span class="material-symbols-outlined text-3xl fill-1">bolt</span>
+</button>
+</div>
+</div>
+<a class="flex flex-col items-center gap-1 text-inactive hover:text-slate-300 w-14 transition-colors" href="#">
+<span class="material-symbols-outlined text-[26px]">military_tech</span>
+<span class="text-[9px] font-black uppercase tracking-wider font-poppins">Challenge</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-inactive hover:text-slate-300 w-14 transition-colors" href="#">
+<span class="material-symbols-outlined text-[26px]">person</span>
+<span class="text-[9px] font-black uppercase tracking-wider font-poppins">Perfil</span>
+</a>
+</nav>
+
+</body></html>

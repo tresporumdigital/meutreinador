@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html class="dark" lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Meu Treinador - Boas-vindas</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "brand-neon": "#59f20d",
+                        "brand-dark": "#0D0D0D",
+                        "surface-dark": "#1E1E1E",
+                    },
+                    fontFamily: {
+                        "sans": ["Inter", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            body {
+                font-family: 'Inter', sans-serif;
+                -webkit-tap-highlight-color: transparent;
+                background-color: #0D0D0D;
+            }
+        }
+        .ai-bubble-glow {
+            border: 1px solid rgba(89, 242, 13, 0.3);
+            box-shadow: 0 0 12px rgba(89, 242, 13, 0.1);
+        }
+        .user-gradient {
+            background: linear-gradient(135deg, #10b981 0%, #59f20d 100%);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #1E1E1E;
+            border-radius: 10px;
+        }
+    </style>
+<style>
+        body {
+            min-height: 100dvh;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="text-white flex flex-col h-screen overflow-hidden">
+<header class="sticky top-0 z-20 bg-[#0D0D0D]/90 backdrop-blur-md border-b border-white/5">
+<div class="flex items-center justify-between px-6 py-4">
+<div class="flex items-center gap-3">
+<button class="flex items-center justify-center size-10 rounded-full bg-[#1E1E1E] text-white">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<div>
+<h1 class="text-sm font-bold tracking-tight text-white flex items-center gap-1.5">
+                        Léo <span class="size-2 bg-brand-neon rounded-full"></span>
+</h1>
+<p class="text-[10px] text-brand-neon/70 uppercase tracking-widest font-semibold">Seu Treinador IA</p>
+</div>
+</div>
+<button class="size-10 flex items-center justify-center rounded-full bg-[#1E1E1E]">
+<span class="material-symbols-outlined text-white">more_horiz</span>
+</button>
+</div>
+</header>
+<main class="flex-1 overflow-y-auto px-4 py-6 space-y-6 custom-scrollbar">
+<div class="flex items-start gap-3 max-w-[85%]">
+<div class="size-10 rounded-full bg-surface-dark flex items-center justify-center shrink-0 border border-brand-neon/40 shadow-[0_0_10px_rgba(89,242,13,0.3)]">
+<span class="material-symbols-outlined text-brand-neon font-bold text-xl">bolt</span>
+</div>
+<div class="space-y-1">
+<div class="bg-surface-dark ai-bubble-glow p-4 rounded-2xl rounded-tl-none text-sm leading-relaxed text-slate-100">
+                    E aí! Eu sou o Léo, seu treinador virtual aqui no Meu Treinador. Prazer! 🤙
+                </div>
+<span class="text-[10px] text-slate-500 ml-1">09:41 AM</span>
+</div>
+</div>
+<div class="flex items-start gap-3 max-w-[85%]">
+<div class="size-10 rounded-full bg-surface-dark flex items-center justify-center shrink-0 border border-brand-neon/40 shadow-[0_0_10px_rgba(89,242,13,0.3)]">
+<span class="material-symbols-outlined text-brand-neon font-bold text-xl">psychology</span>
+</div>
+<div class="space-y-1">
+<div class="bg-surface-dark ai-bubble-glow p-4 rounded-2xl rounded-tl-none text-sm leading-relaxed text-slate-100">
+                    Vou montar treinos, dieta, tudo personalizado pra você. Pra começar, como posso te chamar?
+                </div>
+<span class="text-[10px] text-slate-500 ml-1">09:41 AM</span>
+</div>
+</div>
+<div class="flex flex-col items-start gap-2 max-w-[85%]">
+<div class="flex items-center gap-2 ml-13 pl-13">
+<div class="bg-surface-dark/50 border border-brand-neon/20 px-3 py-2 rounded-2xl rounded-tl-none flex gap-1.5 items-center">
+<span class="w-1.5 h-1.5 bg-brand-neon/60 rounded-full animate-bounce [animation-delay:-0.3s]"></span>
+<span class="w-1.5 h-1.5 bg-brand-neon/60 rounded-full animate-bounce [animation-delay:-0.15s]"></span>
+<span class="w-1.5 h-1.5 bg-brand-neon/60 rounded-full animate-bounce"></span>
+</div>
+<span class="text-[10px] font-medium text-brand-neon/60 uppercase tracking-wider">Digitando...</span>
+</div>
+</div>
+</main>
+<footer class="bg-[#0D0D0D] pt-2 pb-8">
+<div class="px-4">
+<div class="flex items-center gap-2 bg-[#1E1E1E] rounded-full p-1.5 pr-2 border border-white/5 shadow-xl">
+<button class="size-10 flex items-center justify-center text-brand-neon transition-colors">
+<span class="material-symbols-outlined text-2xl">add_circle</span>
+</button>
+<input class="flex-1 bg-transparent border-none focus:ring-0 text-white placeholder:text-slate-500 text-sm py-2 px-1" placeholder="Digite seu nome..." type="text"/>
+<div class="flex items-center gap-2">
+<button class="size-9 flex items-center justify-center text-slate-400 hover:text-brand-neon transition-colors">
+<span class="material-symbols-outlined text-[22px]">mic</span>
+</button>
+<button class="size-10 bg-brand-neon rounded-full flex items-center justify-center text-black shadow-lg shadow-brand-neon/20 active:scale-95 transition-transform">
+<span class="material-symbols-outlined font-bold">arrow_upward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="w-32 h-1.5 bg-white/10 rounded-full mx-auto mt-6"></div>
+</footer>
+
+</body></html>

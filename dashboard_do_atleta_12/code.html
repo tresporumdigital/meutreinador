@@ -1,0 +1,202 @@
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Configuração de Prompts IA - Meu Treinador</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --neon-green-start: #10b981;
+            --neon-green-end: #ccff00;
+            --purple-start: #8b5cf6;
+            --purple-end: #d946ef;
+            --background-dark: #0D0D0D;
+            --card-dark: #1E1E1E;
+            --inactive-gray: #64748b;
+        }
+        @layer base {
+            body {
+                font-family: 'Inter', sans-serif;
+                -webkit-tap-highlight-color: transparent;
+                background-color: var(--background-dark);
+                color: #ffffff;
+                margin: 0;
+                padding: 0;
+            }
+        }
+        .gradient-neon-green {
+            background: linear-gradient(135deg, var(--neon-green-start) 0%, var(--neon-green-end) 100%);
+        }
+        .gradient-purple {
+            background: linear-gradient(135deg, var(--purple-start) 0%, var(--purple-end) 100%);
+        }
+        .gradient-text-neon {
+            background: linear-gradient(135deg, var(--neon-green-start) 0%, var(--neon-green-end) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .neon-glow-green {
+            box-shadow: 0 0 20px rgba(16, 185, 129, 0.2);
+        }
+        .purple-glow-border {
+            box-shadow: 0 0 15px rgba(139, 92, 246, 0.2);
+            border: 1px solid rgba(139, 92, 246, 0.4);
+        }
+        .central-button-glow {
+            box-shadow: 0 0 30px rgba(204, 255, 0, 0.5);
+        }
+        .glass-nav {
+            backdrop-filter: blur(25px);
+            background: rgba(13, 13, 13, 0.94);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .fill-1 {
+            font-variation-settings: 'FILL' 1;
+        }
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#ccff00",
+                        "background-dark": "#0D0D0D",
+                        "card-dark": "#1E1E1E",
+                        "inactive": "#64748b",
+                    },
+                    borderRadius: {
+                        '3xl': '1.5rem',
+                        '4xl': '2rem',
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        body {
+          min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="dark min-h-screen pb-40 overflow-x-hidden">
+<header class="px-6 pt-10 pb-4 sticky top-0 bg-background-dark/95 backdrop-blur-xl z-30">
+<div class="flex justify-between items-center">
+<div>
+<h1 class="text-2xl font-black tracking-tight text-white uppercase leading-none">
+                    MEU <span class="gradient-text-neon">TREINADOR</span>
+</h1>
+<p class="text-[10px] font-bold text-slate-500 uppercase tracking-[0.2em] mt-1 text-nowrap">Segunda-feira, 22 de Outubro</p>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-right">
+<p class="text-[9px] font-black text-slate-500 uppercase tracking-widest">Painel</p>
+<p class="text-xl font-black leading-none gradient-text-neon">ADM</p>
+</div>
+<div class="h-11 w-11 rounded-xl bg-emerald-500/10 flex items-center justify-center border border-emerald-500/20 neon-glow-green">
+<span class="material-symbols-outlined gradient-text-neon text-2xl fill-1">bolt</span>
+</div>
+</div>
+</div>
+</header>
+<main class="px-6 space-y-6 pt-4">
+<div class="flex items-center gap-4">
+<button class="w-10 h-10 rounded-full bg-card-dark border border-white/10 flex items-center justify-center text-white active:scale-95 transition-transform">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h2 class="text-lg font-black text-white uppercase tracking-tight">Configuração de Prompts</h2>
+</div>
+<div class="flex gap-3 overflow-x-auto no-scrollbar pb-2 -mx-6 px-6">
+<button class="flex-shrink-0 px-6 py-3 rounded-2xl gradient-purple text-white text-[10px] font-black uppercase tracking-widest shadow-lg">Onboarding</button>
+<button class="flex-shrink-0 px-6 py-3 rounded-2xl bg-card-dark border border-white/5 text-slate-400 text-[10px] font-black uppercase tracking-widest">Treinos</button>
+<button class="flex-shrink-0 px-6 py-3 rounded-2xl bg-card-dark border border-white/5 text-slate-400 text-[10px] font-black uppercase tracking-widest">Dieta</button>
+<button class="flex-shrink-0 px-6 py-3 rounded-2xl bg-card-dark border border-white/5 text-slate-400 text-[10px] font-black uppercase tracking-widest">Zonas</button>
+<button class="flex-shrink-0 px-6 py-3 rounded-2xl bg-card-dark border border-white/5 text-slate-400 text-[10px] font-black uppercase tracking-widest">Feedback</button>
+</div>
+<div class="bg-card-dark rounded-3xl p-5 purple-glow-border space-y-4">
+<div class="flex justify-between items-center">
+<span class="text-[10px] font-black text-purple-400 uppercase tracking-widest">Editor de Prompt - Onboarding</span>
+<span class="material-symbols-outlined text-purple-400 text-lg">info</span>
+</div>
+<textarea class="w-full h-80 bg-black/40 border-none rounded-2xl text-slate-300 text-xs font-mono leading-relaxed p-4 focus:ring-1 focus:ring-purple-500/50 resize-none" spellcheck="false">Você é um treinador de elite especializado em recepção de novos atletas.
+Instruções:
+1. Comece saudando {{user_name}} de forma motivadora.
+2. Analise o objetivo principal: {{user_goal}}.
+3. Explique como o plano de {{user_plan_type}} ajudará a chegar em {{user_target_weight}}kg.
+4. Mantenha um tom profissional mas acolhedor.
+Contexto Adicional:
+- Nível de Experiência: {{user_level}}
+- Restrições: {{user_limitations}}
+Saída: Formato JSON estruturado com 'welcome_message' e 'initial_steps'.</textarea>
+</div>
+<section class="space-y-3">
+<h3 class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-500 ml-1">Variáveis Disponíveis</h3>
+<div class="flex flex-wrap gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-[9px] font-bold text-slate-300 hover:bg-white/10 transition-colors uppercase tracking-wider">{{user_name}}</button>
+<button class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-[9px] font-bold text-slate-300 hover:bg-white/10 transition-colors uppercase tracking-wider">{{user_goal}}</button>
+<button class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-[9px] font-bold text-slate-300 hover:bg-white/10 transition-colors uppercase tracking-wider">{{user_level}}</button>
+<button class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-[9px] font-bold text-slate-300 hover:bg-white/10 transition-colors uppercase tracking-wider">{{user_plan_type}}</button>
+<button class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-[9px] font-bold text-slate-300 hover:bg-white/10 transition-colors uppercase tracking-wider">{{user_target_weight}}</button>
+</div>
+</section>
+<section class="grid grid-cols-1 gap-4 bg-card-dark p-5 rounded-3xl border border-white/5">
+<div class="space-y-2">
+<label class="text-[10px] font-black uppercase tracking-widest text-slate-500">Modelo de IA</label>
+<select class="w-full bg-black/30 border border-white/10 rounded-xl py-3 px-4 text-xs font-bold text-white focus:ring-purple-500">
+<option>GPT-4o (Omni)</option>
+<option>GPT-4 Turbo</option>
+<option>Claude 3.5 Sonnet</option>
+<option>Claude 3 Opus</option>
+</select>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between">
+<label class="text-[10px] font-black uppercase tracking-widest text-slate-500">Temperatura</label>
+<span class="text-[10px] font-black text-primary">0.7</span>
+</div>
+<input class="w-full h-1.5 bg-black/40 rounded-lg appearance-none cursor-pointer accent-primary" max="1" min="0" step="0.1" type="range" value="0.7"/>
+</div>
+</section>
+<div class="grid grid-cols-1 gap-3 pt-2">
+<button class="w-full py-4 rounded-2xl border border-purple-500/30 text-purple-400 text-[11px] font-black uppercase tracking-[0.2em] active:scale-95 transition-all">
+                Testar Prompt
+            </button>
+<button class="w-full py-4 rounded-2xl gradient-purple text-white text-[11px] font-black uppercase tracking-[0.2em] shadow-lg active:scale-95 transition-all">
+                Salvar Versão
+            </button>
+</div>
+</main>
+<nav class="fixed bottom-0 left-0 right-0 glass-nav border-t border-white/5 px-8 pt-4 pb-10 flex justify-between items-center z-50">
+<a class="flex flex-col items-center text-inactive hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-[28px]">dashboard</span>
+</a>
+<a class="flex flex-col items-center text-inactive hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-[28px]">group</span>
+</a>
+<div class="relative -mt-10">
+<div class="p-[3px] rounded-full bg-background-dark/80 backdrop-blur-md central-button-glow">
+<button class="h-16 w-16 rounded-full gradient-neon-green flex items-center justify-center text-black active:scale-90 transition-transform shadow-[0_0_25px_rgba(204,255,0,0.5)]">
+<span class="material-symbols-outlined text-3xl fill-1 font-bold">bolt</span>
+</button>
+</div>
+</div>
+<a class="flex flex-col items-center text-inactive hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-[28px]">database</span>
+</a>
+<a class="flex flex-col items-center text-inactive hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-[28px]">settings</span>
+</a>
+</nav>
+
+</body></html>

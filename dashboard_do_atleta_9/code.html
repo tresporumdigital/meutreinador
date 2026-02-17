@@ -1,0 +1,236 @@
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Desafios do Atleta (Design Flat) - Meu Treinador</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --neon-green-start: #10b981;
+            --neon-green-end: #ccff00;
+            --orange-start: #f97316;
+            --orange-end: #ef4444;
+            --purple-start: #8b5cf6;
+            --purple-end: #d946ef;
+            --blue-start: #3b82f6;
+            --blue-end: #06b6d4;
+            --yellow-accent: #facc15;
+            --blue-accent: #3b82f6;
+            --purple-accent: #8b5cf6;
+            --background-dark: #0D0D0D;
+            --card-flat: #1E1E1E;
+            --card-dark: #1A1A1A;
+            --inactive-gray: #64748b;
+        }
+        @layer base {
+            body {
+                font-family: 'Inter', sans-serif;
+                -webkit-tap-highlight-color: transparent;
+                background-color: var(--background-dark);
+                color: #ffffff;
+                margin: 0;
+                padding: 0;
+            }
+        }
+        .gradient-neon-green {
+            background: linear-gradient(135deg, var(--neon-green-start) 0%, var(--neon-green-end) 100%);
+        }
+        .gradient-purple-violet {
+            background: linear-gradient(135deg, var(--purple-start) 0%, var(--purple-end) 100%);
+        }
+        .gradient-text-neon {
+            background: linear-gradient(135deg, var(--neon-green-start) 0%, var(--neon-green-end) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .neon-glow-green {
+            box-shadow: 0 0 20px rgba(16, 185, 129, 0.2);
+        }
+        .central-button-glow {
+            box-shadow: 0 0 35px rgba(204, 255, 0, 0.45);
+        }
+        .glass-nav {
+            backdrop-filter: blur(25px);
+            background: rgba(13, 13, 13, 0.96);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .fill-1 {
+            font-variation-settings: 'FILL' 1;
+        }
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#ccff00",
+                        "emerald-vibrant": "#10b981",
+                        "background-dark": "#0D0D0D",
+                        "card-flat": "#1E1E1E",
+                        "card-dark": "#1A1A1A",
+                        "inactive": "#64748b",
+                    },
+                    borderRadius: {
+                        '3xl': '1.5rem',
+                        '4xl': '2rem',
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="dark min-h-screen pb-40">
+<header class="px-6 pt-10 pb-4 sticky top-0 bg-background-dark/95 backdrop-blur-xl z-30">
+<div class="flex justify-between items-center mb-6">
+<div>
+<h1 class="text-2xl font-black tracking-tight text-white uppercase leading-none">
+                    MEU <span class="gradient-text-neon">TREINADOR</span>
+</h1>
+<p class="text-[10px] font-bold text-slate-500 uppercase tracking-[0.2em] mt-1">Segunda-feira, 22 de Outubro</p>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-right">
+<p class="text-[9px] font-black text-slate-500 uppercase tracking-widest">Nível</p>
+<p class="text-xl font-black leading-none gradient-text-neon">2<span class="text-xs text-slate-600 font-normal">/90</span></p>
+</div>
+<div class="h-11 w-11 rounded-xl bg-emerald-500/10 flex items-center justify-center border border-emerald-500/20 neon-glow-green">
+<span class="material-symbols-outlined gradient-text-neon text-2xl fill-1">bolt</span>
+</div>
+</div>
+</div>
+</header>
+<main class="px-6">
+<div class="mb-6">
+<h2 class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-500 ml-1 mb-4">MEUS DESAFIOS</h2>
+<div class="gradient-purple-violet p-[1px] rounded-3xl shadow-xl shadow-purple-500/10 mb-8">
+<div class="bg-card-dark/40 backdrop-blur-sm rounded-[1.4rem] p-6 relative overflow-hidden">
+<div class="absolute -right-4 -top-4 w-32 h-32 bg-white/10 rounded-full blur-3xl"></div>
+<div class="flex justify-between items-center mb-6 relative z-10">
+<div>
+<span class="text-[9px] font-black uppercase tracking-[0.15em] text-white/60 mb-1 block">Elite Challenge</span>
+<h3 class="font-black text-2xl text-white leading-tight">Rio Marathon 2024</h3>
+</div>
+<div class="bg-white/10 px-4 py-1.5 rounded-full border border-white/10">
+<span class="text-sm font-black text-white">12%</span>
+</div>
+</div>
+<div class="w-full bg-white/10 h-3 rounded-full overflow-hidden p-[1px] border border-white/5 relative z-10">
+<div class="bg-white h-full rounded-full" style="width: 12%"></div>
+</div>
+<div class="flex justify-between mt-3 relative z-10">
+<p class="text-[10px] font-bold text-white/60 uppercase">Progresso atual</p>
+<p class="text-[10px] font-bold text-white/60 uppercase">42.2KM meta</p>
+</div>
+</div>
+</div>
+<div class="space-y-3 mb-10">
+<h3 class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-500 ml-1 mb-1">PRÓXIMOS EVENTOS</h3>
+<div class="bg-card-flat rounded-2xl p-5 border-l-4 border-[var(--yellow-accent)] shadow-md">
+<div class="flex justify-between items-center">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-[var(--yellow-accent)] text-lg fill-1">directions_run</span>
+<p class="text-[9px] font-bold uppercase tracking-widest text-slate-400">Road Race</p>
+</div>
+<h4 class="text-base font-bold text-white tracking-tight uppercase">Meia Maratona do Rio</h4>
+<div class="flex items-center gap-4 mt-3">
+<span class="flex items-center gap-1.5 text-[10px] font-semibold uppercase text-slate-400">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span> 15 DE JUNHO
+                                </span>
+<span class="flex items-center gap-1.5 text-[10px] font-semibold uppercase text-slate-400">
+<span class="material-symbols-outlined text-[14px]">distance</span> 21.1KM
+                                </span>
+</div>
+</div>
+<div class="h-10 w-10 rounded-xl bg-white/5 flex items-center justify-center">
+<span class="material-symbols-outlined text-[var(--yellow-accent)] text-xl">chevron_right</span>
+</div>
+</div>
+</div>
+<div class="bg-card-flat rounded-2xl p-5 border-l-4 border-[var(--blue-accent)] shadow-md">
+<div class="flex justify-between items-center">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-[var(--blue-accent)] text-lg fill-1">directions_bike</span>
+<p class="text-[9px] font-bold uppercase tracking-widest text-slate-400">Cycling</p>
+</div>
+<h4 class="text-base font-bold text-white tracking-tight uppercase">Challenge Cycling</h4>
+<div class="flex items-center gap-4 mt-3">
+<span class="flex items-center gap-1.5 text-[10px] font-semibold uppercase text-slate-400">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span> 12 DE AGOSTO
+                                </span>
+<span class="flex items-center gap-1.5 text-[10px] font-semibold uppercase text-slate-400">
+<span class="material-symbols-outlined text-[14px]">pedal_bike</span> 100KM META
+                                </span>
+</div>
+</div>
+<div class="h-10 w-10 rounded-xl bg-white/5 flex items-center justify-center">
+<span class="material-symbols-outlined text-[var(--blue-accent)] text-xl">chevron_right</span>
+</div>
+</div>
+</div>
+<div class="bg-card-flat rounded-2xl p-5 border-l-4 border-[var(--purple-accent)] shadow-md">
+<div class="flex justify-between items-center">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-[var(--purple-accent)] text-lg fill-1">pool</span>
+<p class="text-[9px] font-bold uppercase tracking-widest text-slate-400">Triathlon</p>
+</div>
+<h4 class="text-base font-bold text-white tracking-tight uppercase">Ironman 70.3</h4>
+<div class="flex items-center gap-4 mt-3">
+<span class="text-[9px] font-bold uppercase tracking-[0.1em] text-white px-2.5 py-1 rounded bg-[var(--purple-accent)]/20 border border-[var(--purple-accent)]/30">
+                                    EM PREPARAÇÃO
+                                </span>
+</div>
+</div>
+<div class="h-10 w-10 rounded-xl bg-white/5 flex items-center justify-center">
+<span class="material-symbols-outlined text-[var(--purple-accent)] text-xl">chevron_right</span>
+</div>
+</div>
+</div>
+</div>
+<button class="w-full py-5 rounded-2xl bg-card-dark border-2 border-primary/40 flex items-center justify-center gap-3 active:scale-95 transition-all mb-8 shadow-lg shadow-primary/5">
+<span class="material-symbols-outlined text-primary text-xl">add_circle</span>
+<span class="text-[11px] font-black uppercase tracking-[0.2em] text-white">Adicionar Novo Desafio</span>
+</button>
+</div>
+</main>
+<nav class="fixed bottom-0 left-0 right-0 glass-nav border-t border-white/5 px-6 pt-3 pb-8 flex justify-between items-center z-50">
+<a class="flex flex-col items-center gap-1 text-inactive hover:text-slate-300 w-14 transition-colors" href="#">
+<span class="material-symbols-outlined text-[26px]">home</span>
+<span class="text-[9px] font-black uppercase tracking-wider font-poppins">Início</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-inactive hover:text-slate-300 w-14 transition-colors" href="#">
+<span class="material-symbols-outlined text-[26px]">calendar_today</span>
+<span class="text-[9px] font-black uppercase tracking-wider font-poppins">Agenda</span>
+</a>
+<div class="relative -mt-6">
+<div class="p-[2px] rounded-full bg-background-dark border-[4px] border-background-dark central-button-glow">
+<button class="h-14 w-14 rounded-full gradient-neon-green flex items-center justify-center text-black active:scale-90 transition-transform shadow-[0_0_20px_rgba(204,255,0,0.4)]">
+<span class="material-symbols-outlined text-3xl fill-1">bolt</span>
+</button>
+</div>
+</div>
+<a class="flex flex-col items-center gap-1 w-14 transition-colors" href="#">
+<span class="material-symbols-outlined fill-1 text-[26px] gradient-text-neon">military_tech</span>
+<span class="text-[9px] font-black uppercase tracking-wider font-poppins gradient-text-neon">Challenge</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-inactive hover:text-slate-300 w-14 transition-colors" href="#">
+<span class="material-symbols-outlined text-[26px]">person</span>
+<span class="text-[9px] font-black uppercase tracking-wider font-poppins">Perfil</span>
+</a>
+</nav>
+
+</body></html>

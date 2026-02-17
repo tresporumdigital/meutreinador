@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Login - Meu Treinador</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#59f20d",
+                        "background-light": "#f6f8f5",
+                        "background-dark": "#0A0C08",
+                        "surface-dark": "#131610",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "custom": "0.625rem",
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            body {
+                font-family: 'Inter', sans-serif;
+                -webkit-font-smoothing: antialiased;
+            }
+        }
+        .glass-input {
+            background: rgba(19, 22, 16, 0.4);
+            border: 1px solid rgba(89, 242, 13, 0.15);
+        }
+        .glass-input:focus-within {
+            border-color: rgba(89, 242, 13, 0.4);
+        }
+        .neon-glow {
+            box-shadow: 0 0 25px rgba(89, 242, 13, 0.35);
+        }
+        .bg-radial-gradient {
+            background: radial-gradient(circle at 50% 20%, rgba(89, 242, 13, 0.08) 0%, transparent 60%);
+        }
+        .logo-gradient {
+            background: linear-gradient(135deg, #4ade80 0%, #59f20d 100%);
+        }
+        body {
+            min-height: 100dvh;
+        }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-dark text-white flex items-center justify-center p-4">
+<div class="fixed inset-0 overflow-hidden pointer-events-none">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-radial-gradient"></div>
+</div>
+<div class="relative w-full max-w-[420px] flex flex-col items-center gap-8 py-10 px-6">
+<header class="flex flex-col items-center gap-4">
+<div class="logo-gradient size-16 rounded-[1.25rem] flex items-center justify-center shadow-[0_0_30px_rgba(89,242,13,0.3)] relative">
+<span class="material-symbols-outlined text-black text-3xl" style="font-variation-settings: 'FILL' 1, 'wght' 700">
+                    bolt
+                </span>
+</div>
+<h1 class="text-white text-sm font-extrabold tracking-[0.4em] uppercase">
+                Meu Treinador
+            </h1>
+</header>
+<div class="text-center space-y-2 mt-2">
+<h2 class="text-3xl font-bold tracking-tight text-white">Bem-vindo de volta!</h2>
+<p class="text-slate-400 font-medium">Sua evolução continua aqui.</p>
+</div>
+<form class="w-full space-y-6" onsubmit="return false;">
+<div class="space-y-2">
+<label class="text-sm font-semibold text-slate-300 ml-1">E-mail</label>
+<div class="glass-input rounded-custom flex items-center px-4 h-14 transition-all duration-300">
+<span class="material-symbols-outlined text-slate-500 mr-3 text-xl">mail</span>
+<input class="bg-transparent border-none focus:ring-0 text-white placeholder:text-slate-600 w-full font-medium" placeholder="seu@email.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-semibold text-slate-300 ml-1">Senha</label>
+<div class="glass-input rounded-custom flex items-center px-4 h-14 transition-all duration-300">
+<span class="material-symbols-outlined text-slate-500 mr-3 text-xl">lock</span>
+<input class="bg-transparent border-none focus:ring-0 text-white placeholder:text-slate-600 w-full font-medium tracking-widest" placeholder="••••••••" type="password"/>
+<button class="text-slate-500 hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-xl">visibility</span>
+</button>
+</div>
+</div>
+<div class="flex justify-end px-1">
+<a class="text-sm font-medium text-slate-500 hover:text-primary transition-colors" href="#">
+                    Esqueci minha senha
+                </a>
+</div>
+<div class="pt-2">
+<button class="w-full h-14 rounded-custom bg-gradient-to-r from-emerald-500 to-primary text-black font-extrabold text-lg tracking-wide uppercase transition-transform active:scale-[0.98] neon-glow">
+                    Entrar
+                </button>
+</div>
+</form>
+<footer class="mt-4 text-center">
+<p class="text-slate-400 font-medium">
+                Não tem conta? 
+                <a class="text-primary font-bold hover:underline underline-offset-4 ml-1" href="#">Começar</a>
+</p>
+</footer>
+<div class="mt-8">
+<div class="flex items-center gap-3">
+<div class="h-[1px] w-12 bg-slate-800"></div>
+<div class="flex gap-2">
+<div class="size-1 rounded-full bg-primary/40"></div>
+<div class="size-1 rounded-full bg-primary/20"></div>
+<div class="size-1 rounded-full bg-primary/10"></div>
+</div>
+<div class="h-[1px] w-12 bg-slate-800"></div>
+</div>
+</div>
+</div>
+
+</body></html>
